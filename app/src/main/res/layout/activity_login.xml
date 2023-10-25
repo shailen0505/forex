@@ -21,43 +21,62 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:layout_marginVertical="20dp"/>
-        <TextView
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Email"
-            android:textColor="@color/grayDark"
-            android:textSize="20dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter email"
-            android:textColor="@color/black"
             android:textColorHint="@color/gray"
-            android:backgroundTint="@color/gray"
-            android:textSize="20dp"
-            android:inputType="textEmailAddress"
-            android:layout_marginVertical="10dp"/>
-        <TextView
+            app:boxStrokeColor="@color/gray"
+            app:hintTextColor="@color/black"
+            app:passwordToggleTint="@color/gray">
+            <EditText
+                android:id="@+id/emailId"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/grayLight"
+                android:hint="Enter password"
+                android:paddingVertical="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginVertical="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
-            android:textColor="@color/grayDark"
-            android:textSize="20dp"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Enter password"
-            android:inputType="textPassword"
             android:textColorHint="@color/gray"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/gray"
-            android:textSize="20dp"
-            android:layout_marginVertical="10dp"/>
+            app:passwordToggleEnabled="true"
+            app:boxStrokeColor="@color/gray"
+            app:hintTextColor="@color/black"
+            app:passwordToggleTint="@color/gray">
+            <EditText
+                android:id="@+id/passwordId"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/grayLight"
+                android:hint="Enter password"
+                android:paddingVertical="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginVertical="10dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+            android:id="@+id/loadingId"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
         <Button
+            android:id="@+id/btnLoginId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
             android:textSize="20sp"
+            android:paddingVertical="15dp"
             android:layout_marginVertical="20dp"/>
         <LinearLayout
             android:layout_width="match_parent"
@@ -80,6 +99,7 @@
                 android:layout_marginHorizontal="10dp"
                 android:textSize="20sp"/>
             <TextView
+                android:id="@+id/forgotBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Forgot"
