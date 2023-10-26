@@ -50,8 +50,8 @@
                     android:minHeight="40dp"
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
-                    android:tint="@color/green"
-                    android:src="@drawable/outline_check_circle_outline_24"/>
+                    android:src="@drawable/check_circle_fill0_wght200_grad0_opsz24"
+                    app:tint="@color/green" />
                  </FrameLayout>
             </LinearLayout>
 
@@ -102,8 +102,8 @@
             android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="30dp"
-                    android:maxHeight="30dp"
+                    android:layout_width="40dp"
+                    android:maxHeight="40dp"
                     android:layout_height="match_parent"
                     android:layout_marginEnd="10dp"
                     android:src="@drawable/outline_keyboard_arrow_right_24"

@@ -25,11 +25,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.home:
                     replaceFragment(new HomeFragment());
                     break;
+                case R.id.trade:
+                    replaceFragment(new TradeFragment());
+                    break;
                 case R.id.profile:
                     replaceFragment(new ProfileFragment());
-                    break;
-                case R.id.settings:
-                    replaceFragment(new SettingFragment());
                     break;
 
             }

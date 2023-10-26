@@ -5,10 +5,10 @@
         android:id="@+id/home"
         android:icon="@drawable/ic_outline_home_24"
         android:enabled="true"/>
-    <item android:title="Profile"
+    <item android:title="Trade"
+        android:id="@+id/trade"
+        android:icon="@drawable/outline_format_list_bulleted_24"/>
+    <item android:title="Settings"
         android:id="@+id/profile"
         android:icon="@drawable/ic_outline_person_outline_24"/>
-    <item android:title="Settings"
-        android:id="@+id/settings"
-        android:icon="@drawable/ic_outline_settings_24"/>
 </menu>
