@@ -85,11 +85,11 @@ public class LoginActivity extends AppCompatActivity {
                         for (int i = 0; i < jsonArray.length(); i++){
                             loading.setVisibility(View.GONE);
                             JSONObject object = jsonArray.getJSONObject(i);
-                            String name = object.getString("name").trim();
+                            //String name = object.getString("name").trim();
                             String email = object.getString("email").trim();
                             sessionManager.createSession(email);
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            intent.putExtra("name",name);
+                            //intent.putExtra("name",name);
                             intent.putExtra("email", email);
                             startActivity(intent);
                             btn_login.setVisibility(View.VISIBLE);
@@ -119,6 +119,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             protected Map<String, String> getParams() {
                 Map<String, String> parms = new HashMap<String, String>();
+                parms.put("login", "login");
                 parms.put("email", email);
                 parms.put("password", password);
                 return parms;

@@ -29,15 +29,13 @@
             app:hintTextColor="@color/black"
             app:passwordToggleTint="@color/gray">
             <EditText
-                android:id="@+id/emailId"
+                android:id="@+id/email"
                 android:inputType="textEmailAddress"
                 android:maxLength="50"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/grayLight"
                 android:hint="Enter email"
-                android:paddingVertical="20dp"
                 android:textSize="20dp"
-                android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -50,15 +48,13 @@
             app:hintTextColor="@color/black"
             app:passwordToggleTint="@color/gray">
             <EditText
-                android:id="@+id/passwordId"
+                android:id="@+id/password"
                 android:inputType="textPassword"
                 android:maxLength="20"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/grayLight"
                 android:hint="Enter password"
-                android:paddingVertical="20dp"
                 android:textSize="20dp"
-                android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -71,15 +67,13 @@
             app:hintTextColor="@color/black"
             app:passwordToggleTint="@color/gray">
             <EditText
-                android:id="@+id/passwordConfirmId"
+                android:id="@+id/passwordConfirm"
                 android:inputType="textPassword"
                 android:maxLength="20"
                 android:textColor="@color/black"
                 android:backgroundTint="@color/grayLight"
                 android:hint="Confirm password"
-                android:paddingVertical="20dp"
                 android:textSize="20dp"
-                android:layout_marginVertical="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
@@ -91,6 +85,7 @@
             android:layout_height="wrap_content"/>
 
         <Button
+            android:id="@+id/registerBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
@@ -101,7 +96,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="15dp">
             <TextView
                 android:id="@+id/loginBtn"
                 android:layout_width="wrap_content"
