@@ -3,12 +3,11 @@ package com.forex.Adapter;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.forex.ClosedFragment;
-import com.forex.OpenFragment;
-import com.forex.PendingFragment;
+import com.forex.Fragment.ClosedFragment;
+import com.forex.Fragment.OpenFragment;
+import com.forex.Fragment.PendingFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 

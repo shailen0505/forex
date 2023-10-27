@@ -1,4 +1,4 @@
-package com.forex;
+package com.forex.Fragment;
 
 import android.os.Bundle;
 
@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.forex.Adapter.ViewPagerAdapter;
+import com.forex.R;
 import com.google.android.material.tabs.TabLayout;
 
 

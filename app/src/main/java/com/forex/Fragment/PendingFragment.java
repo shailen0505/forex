@@ -1,4 +1,4 @@
-package com.forex;
+package com.forex.Fragment;
 
 import android.os.Bundle;
 
@@ -8,15 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.forex.R;
 
-public class TradeFragment extends Fragment {
 
+public class PendingFragment extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_trade, container, false);
+        return inflater.inflate(R.layout.fragment_pending, container, false);
     }
 }

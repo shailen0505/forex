@@ -8,7 +8,7 @@
     <item android:title="Trade"
         android:id="@+id/trade"
         android:icon="@drawable/outline_format_list_bulleted_24"/>
-    <item android:title="Settings"
+    <item android:title="Profile"
         android:id="@+id/profile"
         android:icon="@drawable/ic_outline_person_outline_24"/>
 </menu>
