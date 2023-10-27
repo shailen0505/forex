@@ -83,7 +83,7 @@
                 android:layout_marginVertical="10dp"
                 android:text="2,170.74 USD"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <GridLayout
