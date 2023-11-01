@@ -13,7 +13,6 @@ import com.forex.Fragment.TradeFragment;
 import com.forex.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
-    //from home 01 11 2023
     ActivityMainBinding binding;
     SessionManager sessionManager;
     @Override
